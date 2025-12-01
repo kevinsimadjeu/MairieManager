@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Acte de Naissance</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", Arial, sans-serif;
+            background: linear-gradient(135deg, #0a0f2c, #152055);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .container {
+            width: 450px;
+            background: rgba(255, 255, 255, 0.08);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 22px rgba(0,0,0,0.5);
+            backdrop-filter: blur(8px);
+            animation: fadeIn 0.7s ease-in-out;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #4db8ff;
+            letter-spacing: 1px;
+        }
+
+        h3 {
+            color: #9bb8ff;
+            margin-bottom: 15px;
+            border-left: 4px solid #4db8ff;
+            padding-left: 8px;
+        }
+
+        .label {
+            font-weight: 600;
+            display: block;
+            margin-bottom: 6px;
+            color: #e2e8ff;
+        }
+
+        input[type="text"],
+        input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #3a4b8f;
+            background: rgba(255,255,255,0.15);
+            transition: 0.3s;
+            font-size: 14px;
+            color: white;
+            margin-bottom: 12px;
+        }
+
+        input[type="text"]:focus {
+            border-color: #4db8ff;
+            box-shadow: 0 0 8px rgba(77, 184, 255, 0.5);
+            outline: none;
+            background: rgba(255,255,255,0.22);
+        }
+
+        input[type="file"] {
+            border: none;
+            padding-left: 0;
+            color: #d6e0ff;
+        }
+
+        .bouton {
+            width: 100%;
+            padding: 12px;
+            background-color: #1d4ed8;
+            border: none;
+            color: white;
+            font-size: 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .bouton:hover {
+            background-color: #2563eb;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="#../phpGestion/naissance.php" method="post" enctype="multipart/form-data">
+        <div class="container">
+
+            <h2>ACTE DE NAISSANCE</h2>
+
+            <div class="section">
+                <h3>Informations sur l'enfant</h3>
+
+                <label class="label">Nom :</label>
+                <input type="text" name="nom_enfant" id="nom_enfant" required>
+
+                <label class="label">Date de naissance :</label>
+                <input type="text" name="datenais" id="datenais" required>
+
+                <label class="label">Lieu de naissance :</label>
+                <input type="text" name="lieunais" id="lieunais" required>
+            </div>
+
+            <div class="section">
+                <h3>Informations sur les parents</h3>
+
+                <label class="label">Nom du père :</label>
+                <input type="text" name="nompere" id="nompere" required>
+
+                <label class="label">Nom de la mère :</label>
+                <input type="text" name="nommere" id="nommere" required>
+
+                <label class="label">Date de la demande :</label>
+                <input type="text" name="date_dem" required>
+
+                <label class="label">Ajoutez le certificat de vie de l'enfant :</label>
+                <input type="file" name="certificat" accept=".pdf" required>
+            </div>
+
+            <input type="submit" value="Soumettre" class="bouton">
+        </div>
+    </form>
+
+</body>
+
+</html>
+
+

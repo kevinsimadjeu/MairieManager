@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+    <title>Dashboard</title>
+
+</head>
+
+<body>
+
+    <header>
+        <div id="menuToggle" style="position:absolute; top:15px; left:15px; cursor:pointer; font-size:1.5rem; color:white;">
+            &#9776; <!-- icône hamburger -->
+        </div>
+
+        <h1>Bienvenue,<br><span>service des actes d'état civil</span></h1>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <ul class="menu">
+
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="12" y1="5" x2="12" y2="19" />
+                        <line x1="5" y1="12" x2="19" y2="12" />
+                    </svg>
+
+                    <a href="#" id="toggleActe">Créer un nouvel acte</a>
+                </li>
+
+                <!-- Sous-menu ajouté -->
+                <div class="submenu" id="submenuActe">
+                    <a href="GestionActes/naissance.html">Acte de Naissance</a>
+                    <a href="GestionActes/mariage.html">Acte de Mariage</a>
+                    <a href="GestionActes/deces.html">Acte de Décès</a>
+                </div>
+                
+
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="10" y1="4" x2="10" y2="20" />
+                        <line x1="14" y1="8" x2="14" y2="20" />
+                        <line x1="18" y1="12" x2="18" y2="20" />
+                    </svg>
+                    <a href="Authentification/login.html">Actes enregistrés</a>
+                </li>
+
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8" />
+                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                    </svg>
+                    <a href="GestionActes/fineActe.html">Rechercher</a>
+                </li>
+            </ul>
+        </aside>
+
+        <div class="content1">
+            <p>Gérez vos actes efficacement avec un accès rapide et structuré.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy;2025 MairieConnect with Kevin SIMADJEU  - Tous droits réservés</p>
+    </footer>
+
+   
+    <script src="script.js"></script>
+
+</body>
+</html>

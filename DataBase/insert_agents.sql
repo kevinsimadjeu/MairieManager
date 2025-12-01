@@ -1,0 +1,1 @@
+INSERT INTO agents(`nom`, `prenom`, `email`, `telephone`)

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Acte de Mariage</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", Arial, sans-serif;
+            background: linear-gradient(135deg, #0a0f2c, #152055);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .container {
+            width: 420px;
+            background: rgba(255, 255, 255, 0.08);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 22px rgba(0,0,0,0.5);
+            backdrop-filter: blur(8px);
+            animation: fadeIn 0.7s ease-in-out;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #4db8ff;
+            letter-spacing: 1px;
+        }
+
+        h3 {
+            color: #9bb8ff;
+            margin-bottom: 15px;
+            border-left: 4px solid #4db8ff;
+            padding-left: 8px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .label {
+            font-weight: 600;
+            display: block;
+            margin-bottom: 6px;
+            color: #e2e8ff;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #3a4b8f;
+            background: rgba(255,255,255,0.15);
+            transition: 0.3s;
+            font-size: 14px;
+            color: white;
+            margin-bottom: 12px;
+        }
+
+        input:focus {
+            border-color: #4db8ff;
+            box-shadow: 0 0 8px rgba(77, 184, 255, 0.5);
+            outline: none;
+            background: rgba(255,255,255,0.22);
+        }
+
+        .bouton {
+            width: 100%;
+            padding: 12px;
+            background-color: #1d4ed8;
+            border: none;
+            color: white;
+            font-size: 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .bouton:hover {
+            background-color: #2563eb;
+            transform: scale(1.05);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <form action="#../phpGestion/mariage.php" method="post">
+        <div class="container">
+
+            <h2>ACTE DE MARIAGE</h2>
+
+            <div class="section">
+                <h3>Informations sur les époux</h3>
+
+                <label class="label">Nom du mari :</label>
+                <input type="text" name="nom_hom" required>
+
+                <label class="label">Nom de la femme :</label>
+                <input type="text" name="nom_fem" required>
+
+                <label class="label">Nom témoin :</label>
+                <input type="text" name="nom_tem" required>
+
+                <label class="label">Jour du mariage :</label>
+                <input type="text" name="jour_ma" required>
+
+                <label class="label">Lieu du mariage :</label>
+                <input type="text" name="lieu_ma" required>
+
+                <label class="label">Date du mariage :</label>
+                <input type="text" name="date_ma" required>
+            </div>
+
+            <input type="submit" value="Soumettre" name="submit" class="bouton">
+
+        </div>
+    </form>
+
+</body>
+
+</html>
+

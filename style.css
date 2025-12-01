@@ -1,0 +1,295 @@
+    /*Police d importée depuis  un service de Google*/
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #4a4a4a;
+    background: _+#fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: linear-gradient(135deg, #0a0f2c, #152055);
+    color: white;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease forwards;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 2.6rem;
+    line-height: 1.2;
+}
+
+header span {
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    letter-spacing: 3px;
+    color: white;
+    display: block;
+    margin-top: 5px;
+    font-weight: 700;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    padding: 20px;
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.sidebar {
+    background-color: rgba(255 255 255 / 0.95);
+    flex: 0 0 22%;
+    max-width: 22%;
+    padding: 25px 20px;
+    box-shadow: 4px 0 15px rgba(128, 128, 128, 0.15);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    animation: slideInLeft 1.5s ease forwards;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.menu li {
+    margin-bottom: 28px;
+    display: flex;
+    align-items: center;
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    padding: 12px 15px;
+    color: #2e365e;
+    background-color: #e5e7f7;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    flex-grow: 1;
+    margin-left: 12px;
+    box-shadow: 0 4px 10px rgba(58, 70, 179, 0.15);
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    user-select: none;
+}
+
+.menu a:hover {
+    background-color: #443ab3;
+    color: #fff;
+    box-shadow: 0 6px 20px rgba(84, 58, 179, 0.3);
+}
+
+/*sous menu*/
+.submenu {
+            display: none;
+            margin-left: 55px;
+            margin-top: -15px;
+            margin-bottom: 20px;
+        }
+
+        .submenu a {
+            display: block;
+            background-color: #dfe3ff;
+            padding: 8px 10px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            color: #2e365e;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            box-shadow: 0 3px 8px rgba(58, 70, 179, 0.15);
+        }
+
+        .submenu a:hover {
+            background-color: #443ab3;
+            color: white;
+        }
+
+
+.menu svg {
+    width: 26px;
+    height: 26px;
+    stroke: #443ab3;
+    flex-shrink: 0;
+    transition: stroke 0.3s ease;
+}
+
+.menu a:hover svg {
+    stroke: #fff;
+}
+
+.content1 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('DM.jpg') no-repeat center center;
+    background-size: 85% auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(64, 58, 179, 0.4);
+    text-align: center;
+    font-size: 1.5rem;
+    color: #443ab3;
+    font-weight: bold;
+    animation: fadeIn 1.5s ease forwards;
+    min-height: 350px;
+    user-select: none;
+}
+
+#section2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 20px;
+    gap: 28px;
+    max-width: 1400px;
+    margin: 0 auto 40px;
+    animation: fadeInUp 1.5s ease forwards;
+}
+
+.check-box {
+    flex: 1 1 calc(30% - 40px);
+    min-width: 280px;
+    height: 220px;
+    background: #fff;
+    padding: 25px 15px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(58, 68, 179, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.35s ease, box-shadow 0.35s ease, background-color 0.3s ease;
+    cursor: pointer;
+    user-select: none;
+}
+
+.check-box:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 15px 30px rgba(58, 58, 179, 0.35);
+    background-color: #e5ebff;
+}
+
+.check-box a {
+    text-decoration: none;
+    color: #3a3ab3;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    height: 100%;
+    width: 100%;
+    transition: color 0.3s ease;
+    user-select: none;
+}
+
+.check-box a svg {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+    stroke: #3a3eb3;
+    transition: transform 0.3s ease, stroke 0.3s ease;
+    user-select: none;
+}
+
+.check-box a:hover {
+    color: #10008b;
+}
+
+.check-box a:hover svg {
+    transform: scale(1.15);
+    stroke: #00198b;
+}
+
+footer {
+    background: linear-gradient(135deg, #0a0f2c, #152055);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: auto;
+}
+
+
+
+
+/* ------------------------ */
+/* RESPONSIVE POUR TABLETTE ET MOBILE */
+/* ------------------------ */
+@media (max-width: 992px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .sidebar {
+        flex: 1 0 auto;
+        max-width: 100%;
+        padding: 15px;
+        position: absolute;
+        top: 70px; /* juste en dessous de l'header */
+        left: -100%;
+        height: 50vh;
+        z-index: 1000;
+        transition: left 0.3s ease;
+        overflow-y:auto ;
+    }
+
+    .sidebar.show {
+        left: 0;
+    }
+
+    .menu li {
+        margin-bottom: 15px;
+    }
+
+    .menu a {
+        font-size: 0.95rem;
+        padding: 10px 12px;
+    }
+
+    /* Contenu principal réduit pour s'adapter */
+    .content1 {
+        padding: 15px;
+        font-size: 1.2rem;
+        background-size: 95% auto;
+    }
+}
+
+/* Pour très petits écrans */
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+    header span {
+        font-size: 2rem;
+    }
+    .check-box {
+        flex: 1 1 100%;
+        min-width: auto;
+    }
+}
+
