@@ -16,7 +16,7 @@ if (isset($_POST) && !empty($_POST)) {
     $ln = $_POST['lieu_de'];
     $np = $_POST['date_de'];
     $nm = $_POST['date_dem'];
-    $st = $pdo->prepare('INSERT INTO demande_acte_mariage(nom_defunt,nom_declarant,lieu_deces,date_deces,date_demande) VALUES(:nom_defunt,:nom_declarant,:date_deces,:date_deces,:date_demande');
+    $st = $pdo->prepare('INSERT INTO demande_acte_deces(nom_defunt,nom_declarant,lieu_deces,date_deces,date_demande) VALUES(:nom_defunt,:nom_declarant,:date_deces,:date_deces,:date_demande');
     $st->execute(array('nom_defunt' => $ne, 'nom_declarant' => $dn, 'date_deces' => $ln, 'date_demande' => $nm));
     echo "<center><h1><em>Merci pour votre compréhension. vos données seront traitées</h1>";
 }

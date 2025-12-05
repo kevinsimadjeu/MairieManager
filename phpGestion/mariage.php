@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
 
 ?></pre>
 
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html>
 
 <head>
@@ -171,7 +171,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
     </form>
 
     </div>
-    <?php
+     <?php
     require_once('footer.php');
     ?>
     <script src="script.js"></script>
@@ -212,4 +212,4 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
     </script>
 </body>
 
-</html>
+</html> -->
