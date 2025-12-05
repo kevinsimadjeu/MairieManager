@@ -42,3 +42,5 @@ confidentiality constraints,
 real project restrictions,
 
 and protection of sensitive data involved.
+
+# NB : The full project is available on GitHub, but it is private.”
