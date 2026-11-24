@@ -15,7 +15,7 @@ Ergonomic forms for data entry
 
 Smooth navigation and reusable components
 
----> Important: Data-related actions (creation, modification, authentication, storage, etc.) were implemented on the server side but are not included in this GitHub repository to comply with confidentiality requirements. The front-end has been adapted to function without these private endpoints.
+Important: Data-related actions (creation, modification, authentication, storage, etc.) were implemented on the server side but are not included in this GitHub repository to comply with confidentiality requirements. The front-end has been adapted to function without these private endpoints.
 
 # TECHNOLOGIES USED (Front-End)
 HTML5 / CSS3 / JavaScript /Php
